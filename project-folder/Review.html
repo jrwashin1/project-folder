@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> POD Market </title>
+  
+  <style>
+    body { font-family: sans-serif; }
+    .item, .cart-item {
+      border: 7px solid #A27752;
+      padding: 10px;
+      margin: 10px;
+      max-width: 350px;
+    }
+    
+    .item img {
+      max-width: 100px;
+    }
+    
+    #items-list, #cart-contents {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    h1,h2, p {
+    color: teal;
+    }
+    
+    
+    /* Center the entire site horizontally */
+	.container {
+  	max-width: 1000px;
+  	margin: 0 auto;         /* centers horizontally */
+  	padding: 20px;
+  	background-color: #fff;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  	border-radius: 8px;
+	}
+
+/* Optional: center the body vertically too */
+	body {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	min-height: 100vh;
+  	background-color: #f0f0f0;
+	}
+
+  </style>
+  
+</head>
+<body>
+
+  <h1>Chant Pod Market! </h1>
+
+  <div class="container" id="items-list"></div>
+
+  <h2>Your Cart</h2>
+  <div id="cart-contents"></div>
+  <p> <strong> Total: </strong> $<span id="total-price">0.00 </span> </p>
+
+  <script src="scripts/review.js"></script>
+</body>
+</html>
